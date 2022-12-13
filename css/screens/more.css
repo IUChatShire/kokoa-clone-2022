@@ -1,0 +1,32 @@
+.more-screen .icon-row {
+  margin-top: 30px;
+}
+
+.suggestions-header {
+  font-size: 15px;
+  border-top: var(--main-border);
+  padding: 20px 0;
+}
+
+.suggestions-row {
+  display: flex;
+}
+
+.suggestions-row__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 10px;
+}
+
+.suggestions-row__img span {
+  font-size: 14px;
+  opacity: 0.5;
+  margin-top: 6px;
+}
+
+.suggestions__avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+}

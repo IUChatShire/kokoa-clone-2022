@@ -1,0 +1,69 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--horizontal-space);
+  align-items: center;
+  padding-top: 50px;
+  margin-bottom: 15px;
+}
+
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.screen-header__icons span {
+  margin-left: 20px;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.screen-header__icons .fa-gear:hover {
+  will-change: transform;
+  animation: rotateCog 2s linear infinite;
+}
+
+@keyframes ChangeGlass {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.screen-header__icons .fa-magnifying-glass:hover {
+  animation: ChangeGlass 2s linear infinite forwards;
+}
+
+@keyframes VibrateMusic {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: rotateZ(15deg);
+  }
+  50% {
+    transform: rotateZ(-15deg);
+  }
+  75% {
+    transform: rotateZ(15deg);
+  }
+  100% {
+    transform: rotateZ(-15deg);
+  }
+}
+
+.screen-header__icons .fa-music:hover {
+  animation: VibrateMusic 0.5s linear infinite;
+}
